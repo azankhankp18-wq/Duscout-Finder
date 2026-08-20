@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Discount — Local Deals Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #0f0f12;
+      font-family: 'Inter', sans-serif;
+    }
+    #root:empty::before {
+      content: "Daily Discount";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #f0f0f5;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    #root:empty::after {
+      content: "Loading best local deals...";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b6b7b;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: -45vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
